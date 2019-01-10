@@ -1,0 +1,71 @@
+/* body styling start */
+body {
+    margin: 0%;
+    background-color: rgb(14, 14, 14);
+}
+/* body styling ends */
+
+/* navbar styles start */
+#navbar {
+    background-color: black;
+    padding: 1em;
+}
+nav ul {
+    text-align: center;
+}
+nav ul li {
+    list-style: none;
+    display: inline;
+}
+nav ul li a {
+    text-decoration: none;
+    margin: 0em 2em;
+    color: rgb(255, 255, 255);
+}
+/* navbar styles ends */
+
+/* main title styles start */
+#container {
+    height: 25em;
+    background-color: rgb(255, 136, 1);
+    clip-path: polygon(0 0, 100% 0%, 100% 79%, 0 100%);
+}
+#title {
+    position: absolute;
+    margin: 8em 0em 0em 3em;
+}
+#main_title{
+    margin: 0%;
+}
+/* main title style end */
+
+/* about me style section start */
+#background {
+    height: 10em;
+}
+#about_text {
+    color: rgb(238, 238, 238);
+}
+/* about me style section end */
+
+/* skills section styles start */
+#skills_bg {
+    height: 66em;
+    background-color: white;
+}
+
+#allskills {
+    background-color: rgb(14, 14, 14);
+    color: white;
+}
+
+#skillsmain_bg {
+    height: 6em;
+}
+#html_bg {
+    height: 30em;
+}
+#css_bg {
+    height: 30em;
+}
+/* skills section styles end */
