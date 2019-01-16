@@ -1,119 +1,127 @@
-@font-face {
-    src: url(../fonts/Assassin$.ttf);
-    font-family: creed;
-}
-/* body styling start */
-body {
-    margin: 0%;
-    
-    background: linear-gradient(to right bottom, rgba(211, 211, 211, 0.678), rgba(26, 25, 25, 0.74));
-    
-}
-/* body styling ends */
 
-/* navbar styles start */
-#navbar {
-    padding-top: 0.5em;
-    display: inline-block;
-    width: 100%;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.692);
+/* body styles start */
+body {
+    background-color: rgb(8, 8, 8);
+    margin: 0% ;
+    font-family: 'Titillium Web', sans-serif;
+}
+/* body syles end */
+
+/* header styles start */
+nav {
+    
 }
 nav ul {
-    margin-top: 0%;
+    margin: 0%;
     text-align: center;
+    /* background-color: #BEC5AD; */
+    
 }
 nav ul li {
+    display: inline-block;
     list-style: none;
-    display: inline;
+    
 }
 nav ul li a {
-    font-size: 1.5em;
-    color: white;
-    margin: 0em 2em;
     
-    font-family: creed;
+    padding: 2em;
     text-decoration: none;
+    color: white;
 }
-/* navbar styles ends */
+/* header styles end */
 
-/* main title styles start */
-#hero {
-    height: 40em;
-    clip-path: polygon(0 0, 100% 0%, 100% 79%, 0 100%);   
-}
-#vid {
-    z-index: -1;
-    position: absolute;
+/* hero styling starts */
+#hero_bg {
+    background-image: url(../images/full-hd-black-wallpaper-10.jpg);
+    background-size: cover;
     width: 100%;
+    height: 40em;
 }
-#content{
-    margin-top: 5em;
-    margin-left: 13em;
-    position: absolute;
-    font-family: creed;
+#main_title {
+    padding-top: 8em;
+    padding-left: 2em;
+}
+/* hero styles ends */
+h1,
+h2,
+h3 {
+    color: rgb(255, 255, 255);
     font-size: 2em;
-    text-align: center;
+    line-height: 0.4em; 
+    font-weight: 100;
 }
-
-/* main title style end */
-
-/* about me style section start */
-#background {   
-    height: 13em;
+p {
+    color: #BEC5AD;
 }
-#about_text {
-    color: rgb(0, 0, 0);
-    font-family: creed;
-    font-size: 2em;
-}
-/* about me style section end */
-
-/* skills section styles start */
-#skills_bg {
-    font-family: creed;
-    font-size: 2em;
-    height: 66em;
-    background-color: rgb(14, 14, 14);
-}
-
-#allskills {
-    background-color: rgb(14, 14, 14);
-    color: white;
-}
-
-#skillsmain_bg {
+#green {
+    width: 100%;
     height: 10em;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 63%);
-    background-color: rgb(82, 1, 1);
-    color: white;
+    background-color: rgb(46, 177, 20);
+    background: linear-gradient(rgb(44, 170, 19), rgb(26, 97, 11));
     
 }
-#html_bg {
-    height: 13em;
-  
-}
-.skill_content {
-    float: left;
-    text-align: center;
-    max-width: 60%;
-}
-#html_logo {
-    float: left;
-    height: 65%;
-    width: 23%;
-}
-#css_bg {
+#ya {
+    padding-top: 3em;
     
-    height: 15em;
-    background: linear-gradient(to right bottom, rgba(211, 211, 211, 0.678), rgba(26, 25, 25, 0.74));
-    color: black;
-    clip-path: polygon(0 0, 100% 0%, 100% 79%, 0 100%);
 }
-#css_logo{
-    margin-top: 1em;
-    height: 65%;
-    width: 25%;
+#block {
+    display: inline-block;
+    background-color: grey;
+    width: 40%;
+    height: 35em;
+    margin-left: 3%;
 }
-/* skills section styles end */
+#about_content {
+    display: inline-block;
+    width: 40%;
+    float: right;
+    padding-right: 10%;
 
+}#skillsmain_bg {
+    text-align: center;
+    padding: 8em;
+    
+}
+.html_bg{
+    display: inline-block;
+}
+.html_content {
+    display: inline-block;
+    width: 40%;
+    padding-left: 4%;
+}
+.img {
+    display: inline-block;
+    background-color:rgb(26, 97, 11);
+    width: 40%;
+    height: 35em;
+    float: right;
+    margin-right: 4%;
+    
+}
+#space {
+    margin-top: 5em;
+}
+.exp {
+ 
+}
+#awe {
+    
+}
+
+footer p {
+    color: black;
+    padding: 2em;
+    background: linear-gradient(rgb(44, 170, 19), rgb(26, 97, 11));
+    margin-bottom: 0%;
+}
+#htmllogo{
+    background-image: url(../images/HTML5_1Color_White.png);
+    background-size: cover;
+}
+#csslogo {
+    background-image: url(../images/css3_u2sgzp.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}

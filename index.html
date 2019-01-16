@@ -2,10 +2,8 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Barlow:800" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <title>Document</title>
 </head>
@@ -16,63 +14,73 @@
     <header>
 
         <!-- nav bar starts here -->
-        
+        <nav>   
+            <ul>
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="">About Me</a>
+                </li>
+                <li>
+                    <a href="">Skills</a>
+                </li>
+                <li>
+                    <a href="">Contact</a>
+                </li>
+            </ul>
+        </nav>
         <!-- nav bar ends here -->
         
     </header>
     
     <section>
         
-        <div id="hero">
+        <div id="hero_bg">
             
-            <div id="vid">
-                    <video autoplay muted loop id="video">
-                    <source src="../online-cv/video/123.mp4" type="video/mp4">            
-                    </video>
-            </div>
             <!-- main head of site --> 
-                
                         
-            <div id="content">
+            <div id="main_title" data-aos="fade-down">
                 <h1>
-                    Naasik Kamish
+                    I Am
                 </h1>
-                <h2>
-                    full stack | junior developer
-                </h2>
+                    <h1>
+                     Naasik
+                    </h1>
+                    <h1>
+                        Kamish
+                    </h1>
+                    <h3>
+                        Full stack | Junior Developer
+                    </h3>
+                
             </div>
                     
             <!-- main head ends -->
-            <nav>   
-                    <div id="navbar">
-                        <ul>
-                            <li>
-                                <a href="">About Me</a>
-                            </li>
-                            <li>
-                                <a href="">Skills</a>
-                            </li>
-                            <li>
-                                <a href="">Experience</a>
-                            </li>
-                            <li>
-                                <a href="">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+            
+        
         </div>
-               
+        
+        <div id="green">
+
+        </div>
+        
     </section>
     <!-- head of webpage ends here -->
     
     <!-- about me section starts here -->
-    <section id="background">
+    <section id="ya">
+        <div id="block" data-aos="fade-right">
+            
+        </div>
 
-        <div id="about_text">
+        <div id="about_content" data-aos="fade-up">
             <h2>About Me</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde doloribus repellendus libero rerum tempora maxime vero repudiandae dolores labore voluptas, voluptatum neque eius non tenetur explicabo quaerat esse? Ea, maxime?
+            </p>
+            <p>
+                download cv
             </p>
         </div>
 
@@ -82,36 +90,46 @@
     <!-- skills section starts here -->
     <section id="skills_bg">
 
-        <div id="skillsmain_bg">
+        <div id="skillsmain_bg" data-aos="fade-up">
             <h2>my skills</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ut deserunt numquam voluptate aliquid autem doloribus, architecto unde aut sunt placeat hic veritatis iure iste asperiores totam sit corrupti illo!
             </p>
+            
         </div>
-
+        
         <div id="allskills">
             
-            <div id="html_bg">
+            <div class="html_bg">
                     
-                    <img id="html_logo" src="../online-cv/images/html-logo-png-2.png" alt="html_logo">
-                    <div class="skill_content">    
+                    <div class="html_content" data-aos="fade-up">
+                        <h3>01</h3>    
                         <h3>html 5</h3>
                         <p>
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, rem quisquam sunt labore quaerat deserunt provident consequuntur eum eius omnis aliquam accusamus neque distinctio maiores unde iste architecto dolorem. Amet?
                         </p>
                     </div>
+                    <div class="img" id="htmllogo" data-aos="fade-left">
+            
+                    </div>
             </div>
 
-            <div id="css_bg">
+            <div class="html_bg" id="space">
                 
                 
-                    <img id="css_logo" src="../online-cv/images/CSS3_Badge_512.png" alt="">
-                    <div class="skill_content">
-                <h3>css 3</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, rem quisquam sunt labore quaerat deserunt provident consequuntur eum eius omnis aliquam accusamus neque distinctio maiores unde iste architecto dolorem. Amet?
-                </p>
+                    
+                <div class ="html_content" data-aos="fade-up">
+                    <h3>02</h3>
+                    <h3>css 3</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, rem quisquam sunt labore quaerat deserunt provident consequuntur eum eius omnis aliquam accusamus neque distinctio maiores unde iste architecto dolorem. Amet?
+                    </p>
                 </div>
+                
+                <div class="img" id="csslogo" data-aos="fade-left">
+
+                </div>
+                
             </div>
         </div>
 
@@ -119,27 +137,27 @@
     <!-- skills section ends -->
 
     <!-- experience section start -->
-    <section>
-        <div>
+    <section id="awe">
+        <div id="this">
 
             <div>
                 <h2>my experiece</h2>
             </div>
-            <div>
+            <div class="exp">
                 <h3>life choices</h3>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto unde accusantium fugiat alias quae atque dolorum molestiae delectus officia fugit, mollitia enim eveniet cumque esse ut sapiente, minima optio magni!
                 </p>
             </div>
             
-            <div>
+            <div class="exp">
                 <h3>cisco</h3>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto unde accusantium fugiat alias quae atque dolorum molestiae delectus officia fugit, mollitia enim eveniet cumque esse ut sapiente, minima optio magni!
                 </p>
             </div>
             
-            <div>
+            <div  class="exp">
                 <h3>high school</h3>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto unde accusantium fugiat alias quae atque dolorum molestiae delectus officia fugit, mollitia enim eveniet cumque esse ut sapiente, minima optio magni!
@@ -153,36 +171,43 @@
     <!-- contact field -->
     <section>
         <div>
-
-            <div>
-                <!-- name -->
-            </div>
-
-            <div>
-                <!-- email -->
-            </div>
-
-            <div>
-                <!-- coments -->
-            </div>
-
-            <div>
-                <!-- submit -->
-            </div>
-
+            <h1>
+                Contact Me
+            </h1>
         </div>
+        <div>
+            <h3>
+                Cellphone Number
+            </h3>
+            <i></i>
+            <p>071 081 2346</p>
+        </div>
+        
+        <div>
+            <h3>
+                Email Address
+            </h3>
+            <i></i>
+            <p>example@gmail.com</p>
+        </div>
+
     </section>
     <!-- contact field ends -->
-    
-    <div>
-       
-    </div>
 
-    <footer>
+
+    <footer id="footer">
         <p>
             created by lorem
         </p>
     </footer>
+
+    <!-- AOS initialization script starts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
+    <!-- AOS initialization script starts -->
 
 </body>
 
