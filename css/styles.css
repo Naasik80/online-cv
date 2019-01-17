@@ -100,10 +100,37 @@ p {
     
 }
 #space {
-    margin-top: 5em;
+    padding: 10em 0em;
 }
-.exp {
- 
+.exp1 {
+    width: 100%;
+    height: 45em;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgb(0, 0, 0, 0.5)), url(../images/hah.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.exp2 {
+    width: 100%;
+    height: 45em;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgb(0, 0, 0, 0.5)), url(../images/LC-QR-Image-lime_i1920.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.exp3 {
+    width: 100%;
+    height: 45em;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgb(0, 0, 0, 0.5)), url(../images/Logo-Life-Choices.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.contentskill {
+    text-align: center;
+    padding-top: 3em;
+    font-size: 3em;
+    
 }
 #awe {
     
@@ -111,9 +138,10 @@ p {
 
 footer p {
     color: black;
-    padding: 2em;
+    padding: 1em;
     background: linear-gradient(rgb(44, 170, 19), rgb(26, 97, 11));
     margin-bottom: 0%;
+    margin-top: 5em;
 }
 #htmllogo{
     background-image: url(../images/HTML5_1Color_White.png);
@@ -124,4 +152,26 @@ footer p {
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
+}
+.icon {
+    width: 3em;
+    height: 3em;
+}
+#contact {
+    padding-left: 3%;
+    padding-top: 3%;
+}
+#cell {
+    padding-left: 3%;
+    padding-top: 5em;
+}
+#email {
+    padding-top: 5em;
+    padding-left: 3%;
+}
+h4 {
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    line-height: 0%;
+    font-weight: 100;
 }
