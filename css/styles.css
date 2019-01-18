@@ -1,36 +1,100 @@
-
+/* html styles start */
+html {   
+    scroll-behavior: smooth;  
+}
+/* html styles end */
 /* body styles start */
 body {
     background-color: rgb(8, 8, 8);
     margin: 0% ;
     font-family: 'Titillium Web', sans-serif;
+    overflow-x: hidden;
 }
 /* body syles end */
 
-/* header styles start */
-nav {
-    
+/* global styles starts */
+h1,
+h2 {
+    color: rgb(255, 255, 255);
+    line-height: 1.3em; 
+    font-weight: 100;
 }
-nav ul {
-    margin: 0%;
-    text-align: center;
-    /* background-color: #BEC5AD; */
-    
+h3,
+h4 {
+    color: rgb(179, 182, 169);
+    line-height: 1.3em; 
+    font-weight: 100;
 }
-nav ul li {
+p {
+    color: #BEC5AD;
+}
+.text_filter {
+    color: rgb(44, 170, 19);
+}
+/* global styles ends */
+
+/* back to top button styles starts */
+#totop_btn {
+    display: none;
+    position: fixed;
+    bottom: 2em;
+    right: 3em;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgba(44, 170, 19, 0.5);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+#totop_btn:hover {
+    background-color: rgba(25, 97, 11, 0.8);
+}
+#arrow {
+    width: 2em;
+    height: 2em;
+}
+  
+/* back to top button styles ends */
+
+/* navbar styles starts */
+#navbar {
+    background-color: black;
+}
+ul {
+    text-align: right;
+}
+ul li {
     display: inline-block;
-    list-style: none;
-    
+    list-style-type: none;
+    padding: 0em 2em;
 }
-nav ul li a {
-    
-    padding: 2em;
+ul li a {
+    font-size: 1.5em;
     text-decoration: none;
     color: white;
 }
-/* header styles end */
+#toggle-btn {
+    background-color: black;   
+}
+ul li a:hover {
+    color: rgb(44, 170, 19);
+    text-decoration: none;
+}
+#logo {
+    top: 0em;
+    position: absolute;
+    background-image: url(../images/NV-GF-GTX-Game-Ready-logo-RGB.png);
+    width: 10em;
+    height: 7em;
+    background-position: center;
+    background-size: contain;
+}
+/* navbar styles ends */
 
-/* hero styling starts */
+/* main header section styles start */
 #hero_bg {
     background-image: url(../images/full-hd-black-wallpaper-10.jpg);
     background-size: cover;
@@ -38,33 +102,22 @@ nav ul li a {
     height: 40em;
 }
 #main_title {
-    padding-top: 8em;
+    padding-top: 10em;
     padding-left: 2em;
 }
-/* hero styles ends */
-h1,
-h2,
-h3 {
-    color: rgb(255, 255, 255);
-    font-size: 2em;
-    line-height: 0.4em; 
-    font-weight: 100;
-}
-p {
-    color: #BEC5AD;
-}
-#green {
+#slogan_bg {
+    display: inline-block;
     width: 100%;
     height: 10em;
-    background-color: rgb(46, 177, 20);
-    background: linear-gradient(rgb(44, 170, 19), rgb(26, 97, 11));
-    
+    background: linear-gradient(rgb(44, 170, 19), rgb(26, 97, 11));   
 }
-#ya {
-    padding-top: 3em;
-    
+/* main header section styles end */
+
+/* about section styles start */
+#sec-break {
+    padding-top: 8em;   
 }
-#block {
+#photo {
     display: inline-block;
     background-color: grey;
     width: 40%;
@@ -72,37 +125,67 @@ p {
     margin-left: 3%;
 }
 #about_content {
-    display: inline-block;
+    padding-right: 10%;
     width: 40%;
     float: right;
-    padding-right: 10%;
-
-}#skillsmain_bg {
-    text-align: center;
-    padding: 8em;
-    
 }
-.html_bg{
+#cv_link a {
+    color: rgb(44, 170, 19);
+}
+#cv_link a:hover {
+    color: rgb(26, 97, 11);
+    text-decoration: none;
+}
+/* about section styles ends */
+
+/* skills section styles starts */
+#skills_title {
+    padding:8em 3em;   
+}
+.skills_container{
     display: inline-block;
 }
-.html_content {
+.skills_content {
     display: inline-block;
     width: 40%;
     padding-left: 4%;
 }
-.img {
-    display: inline-block;
+#html_logo {
+    background-image: url(../images/HTML5_1Color_White.png);
+    background-size: cover;
     background-color:rgb(26, 97, 11);
     width: 40%;
     height: 35em;
     float: right;
     margin-right: 4%;
-    
 }
-#space {
+#breakpoint {
     padding: 10em 0em;
 }
-.exp1 {
+#csslogo {
+    background-image: url(../images/css3_u2sgzp.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color:rgb(26, 97, 11);
+    width: 40%;
+    height: 35em;
+    float: right;
+    margin-right: 4%;
+}
+/* skills section styles ends */
+
+/* education section styles */
+#edu_title {
+    margin-bottom: 8em;
+    padding-left: 3em;
+}
+.content_container {
+    text-align: center;
+    padding-top: 5em;
+    font-size: 3em;   
+}
+#school_container {
     width: 100%;
     height: 45em;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgb(0, 0, 0, 0.5)), url(../images/hah.jpg);
@@ -110,14 +193,14 @@ p {
     background-attachment: fixed;
     
 }
-.exp2 {
+#uni_container {
     width: 100%;
     height: 45em;
     background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgb(0, 0, 0, 0.5)), url(../images/LC-QR-Image-lime_i1920.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
-.exp3 {
+#code_container {
     width: 100%;
     height: 45em;
     background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgb(0, 0, 0, 0.5)), url(../images/Logo-Life-Choices.jpg);
@@ -126,40 +209,17 @@ p {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-.contentskill {
-    text-align: center;
-    padding-top: 3em;
-    font-size: 3em;
-    
-}
-#awe {
-    
-}
 
-footer p {
-    color: black;
-    padding: 1em;
-    background: linear-gradient(rgb(44, 170, 19), rgb(26, 97, 11));
-    margin-bottom: 0%;
-    margin-top: 5em;
-}
-#htmllogo{
-    background-image: url(../images/HTML5_1Color_White.png);
-    background-size: cover;
-}
-#csslogo {
-    background-image: url(../images/css3_u2sgzp.png);
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
+/* education section styles end */
+
+/* contact section styles start */
 .icon {
     width: 3em;
     height: 3em;
 }
-#contact {
-    padding-left: 3%;
-    padding-top: 3%;
+#contact_title {
+    padding-top: 8em;
+    padding-left: 2em;
 }
 #cell {
     padding-left: 3%;
@@ -169,9 +229,264 @@ footer p {
     padding-top: 5em;
     padding-left: 3%;
 }
-h4 {
-    color: rgb(255, 255, 255);
-    font-size: 1.5em;
-    line-height: 0%;
-    font-weight: 100;
+/* contact section styles end */
+
+/* footer section styles start */
+
+footer {
+    color: black;
+    padding: 1em;
+    background: linear-gradient(rgb(44, 170, 19), rgb(26, 97, 11));
+    margin-bottom: 0%;
+    margin-top: 5em;
+}
+
+/* footer section styles end */
+
+/* Responsive design */
+
+/* Portrait and Landscape smartphone*/
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    
+    /* html styles start */
+    html {   
+        scroll-behavior: smooth;  
+    }
+    /* html styles end */
+    /* body styles start */
+    body {
+        background-color: rgb(8, 8, 8);
+        margin: 0% ;
+        font-family: 'Titillium Web', sans-serif;
+        overflow-x: hidden;
+    }
+    /* body syles end */
+
+    /* global styles starts */
+    h1,
+    h2 {
+        color: rgb(255, 255, 255);
+        line-height: 1.3em; 
+        font-weight: 100;
+    }
+    h3,
+    h4 {
+        color: rgb(179, 182, 169);
+        line-height: 1.3em; 
+        font-weight: 100;
+    }
+    p {
+        color: #BEC5AD;
+    }
+    .text_filter {
+        color: rgb(44, 170, 19);
+    }
+    /* global styles ends */
+
+    /* back to top button styles starts */
+    #totop_btn {
+        display: none;
+        position: fixed;
+        bottom: 2em;
+        right: 3em;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: rgba(44, 170, 19, 0.5);
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+    }
+    #totop_btn:hover {
+        background-color: rgba(25, 97, 11, 0.8);
+    }
+    #arrow {
+        width: 2em;
+        height: 2em;
+    }
+    
+    /* back to top button styles ends */
+
+    /* navbar styles starts */
+    #navbar {
+        background-color: black;
+    }
+    ul {
+        
+    }
+    ul li {
+        display: inline-block;
+        list-style-type: none;
+        
+    }
+    ul li a {
+        font-size: 1.5em;
+        text-decoration: none;
+        color: white;
+    }
+    #toggle-btn {
+        background-color: black;   
+    }
+    ul li a:hover {
+        color: rgb(44, 170, 19);
+        text-decoration: none;
+    }
+    #logo {
+        position: relative;
+        background-image: url(../images/NV-GF-GTX-Game-Ready-logo-RGB.png);
+
+        background-position: center;
+        background-size: cover;
+    }
+    /* navbar styles ends */
+
+    /* main header section styles start */
+    #hero_bg {
+        background-image: url(../images/full-hd-black-wallpaper-10.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 40em;
+    }
+    #main_title {
+        padding-top: 10em;
+        
+    }
+    #slogan_bg {
+        display: inline-block;
+        width: 100%;
+        height: 10em;
+        background: linear-gradient(rgb(44, 170, 19), rgb(26, 97, 11));   
+    }
+    /* main header section styles end */
+
+    /* about section styles start */
+    #sec-break {
+        padding-top: 8em;   
+    }
+    #photo {
+        margin: 0%;
+        background-color: grey;
+        width: 100%;
+        height: 35em;
+        
+    }
+    #about_content {
+       padding-left: 2em;
+        width: 100%;
+        
+    }
+    #cv_link a {
+        color: rgb(44, 170, 19);
+    }
+    #cv_link a:hover {
+        color: rgb(26, 97, 11);
+        text-decoration: none;
+    }
+    /* about section styles ends */
+
+    /* skills section styles starts */
+    #skills_title {
+        padding: 0em 8em;   
+    }
+    .skills_container{
+        display: inline-block;
+    }
+    .skills_content {
+        display: inline-block;
+        width: 100%;
+    }
+    #html_logo {
+        background-image: url(../images/HTML5_1Color_White.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-color:rgb(26, 97, 11);
+        width: 100%;
+        height: 35em;  
+    }
+    #breakpoint {
+        padding: 10em 0em;
+    }
+    #csslogo {
+        background-image: url(../images/css3_u2sgzp.png);
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color:rgb(26, 97, 11);
+        width: 100%;
+        height: 35em;  
+    }
+    /* skills section styles ends */
+
+    /* education section styles */
+    #edu_title {
+        margin-bottom: 8em; 
+    }
+    .content_container {
+        text-align: center;
+        padding-top: 5em;
+        font-size: 3em;   
+    }
+    #school_container {
+        width: 100%;
+        height: 45em;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgb(0, 0, 0, 0.5)), url(../images/hah.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        
+    }
+    #uni_container {
+        width: 100%;
+        height: 45em;
+        background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgb(0, 0, 0, 0.5)), url(../images/LC-QR-Image-lime_i1920.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    #code_container {
+        width: 100%;
+        height: 45em;
+        background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgb(0, 0, 0, 0.5)), url(../images/Logo-Life-Choices.jpg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    /* education section styles end */
+
+    /* contact section styles start */
+    .icon {
+        width: 3em;
+        height: 3em;
+    }
+    #contact_title {
+        padding-top: 8em;
+        padding-left: 2em;  
+    }
+    #cell {   
+        padding-top: 5em;
+        padding-left: 2em;
+    }
+    #email {
+        padding-top: 5em;
+        padding-left: 2em;
+    }
+    /* contact section styles end */
+
+    /* footer section styles start */
+
+    footer {
+        color: black;
+        padding: 1em;
+        background: linear-gradient(rgb(44, 170, 19), rgb(26, 97, 11));
+        margin-bottom: 0%;
+        margin-top: 5em;
+    }
+
+    /* footer section styles end */
 }
