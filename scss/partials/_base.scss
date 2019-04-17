@@ -594,7 +594,6 @@ section {
 	z-index: 2;
 	bottom: 0;
 	padding: 80px 0;
-	width: 100%;
 	text-align: center;
 }
 .CSSgal .bullets > a {
@@ -747,39 +746,131 @@ section {
 #footnote-left {
   display: block;
   position: absolute;
-  top: 35em;
+  top: 35.5em;
   width: 100%;
   margin-left: 1em;
 }
 #footnote-left i {
-  font-size: 2em;
+  float: left;
+  font-size: 1.5em;
   color: rgb(255, 255, 255);
-  margin-bottom: 1em;
+  margin: 0 1em 0 0;
 }
 #footnote-left p {
-  font-size: 1.3em;
+  font-size: 1em;
   line-height: 0.2em;
   font-family: 'Raleway', sans-serif;
   color: white;
   text-shadow: 3px 4px 1px rgba(0, 0 , 0, 0.2);
+}
+#contact-number {
+  color: rgb(1, 151, 21) !important;
 }
 #footnote-right {
   display: block;
   position: absolute;
-  top: 35em;
+  top: 39.5em;
   width: 100%;
-  padding-left: 16em;
   margin-left: 1em;
 }
 #footnote-right i {
   color: white;
-  font-size: 2em;
-  margin-bottom: 1em;
+  font-size: 1.5em;
+  float: left;
+  margin: 0 1em 0 0;
 }
 #footnote-right p {
-  font-size: 1.3em;
+  font-size: 1em;
   line-height: 0.2em;
   font-family: 'Raleway', sans-serif;
   color: white;
   text-shadow: 3px 4px 1px rgba(0, 0 , 0, 0.2);
 }
+#footnote-right p a {
+  color: rgb(1, 151, 21);
+  transition: 0.3s;
+}
+#footnote-right p a:hover {
+ color:  rgb(0, 109, 14);
+}
+#footnote-right-r {
+  display: block;
+  position: absolute;
+  top: 35.5em;
+  width: 100%;
+  margin-left: 18em;
+}
+#footnote-right-r i {
+  float: left;
+  font-size: 1.5em;
+  color: rgb(255, 255, 255);
+  margin: 0 1em 0 0;
+}
+#footnote-right-r p {
+  font-size: 1em;
+  line-height: 0.2em;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  text-shadow: 3px 4px 1px rgba(0, 0 , 0, 0.2);
+}
+#footnote-right-r p a {
+  color: rgb(1, 151, 21);
+  transition: 0.3s;
+}
+#footnote-right-r p a:hover {
+ color:  rgb(0, 109, 14);
+}
+#footnote-right-d {
+  display: block;
+  position: absolute;
+  top: 39.5em;
+  width: 100%;
+  margin-left: 18em;
+}
+#footnote-right-d i {
+  float: left;
+  font-size: 1.5em;
+  color: rgb(255, 255, 255);
+  margin: 0 1em 0 0;
+}
+#footnote-right-d p {
+  font-size: 1em;
+  line-height: 0.2em;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  text-shadow: 3px 4px 1px rgba(0, 0 , 0, 0.2);
+}
+#footnote-right-d p a {
+  color: rgb(1, 151, 21);
+  transition: 0.3s;
+}
+#footnote-right-d p a:hover {
+ color:  rgb(0, 109, 14);
+}
+
+.project-btn-styles {
+  margin-top: 3em;
+  
+  a {
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+    color: white !important;
+    background-color: #01490a;
+    padding: 0.6em 2em 0.6em 0.5em;
+    border-radius: 0% !important;
+    text-shadow: none;
+    transition: 0.5s all;
+
+    i {
+      margin-left: 0.5em;
+      margin-right: 0.5em;
+    }
+  }
+}
+.project-btn-styles a:hover {
+  color: black !important;
+  background-color: #cccccc;
+  text-shadow: 3px 4px 1px rgba(0, 0 , 0, 0.2);
+  padding: 0.6em 2em 0.6em 2em;
+  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+}
+
