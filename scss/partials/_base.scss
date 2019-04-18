@@ -763,8 +763,15 @@ section {
   color: white;
   text-shadow: 3px 4px 1px rgba(0, 0 , 0, 0.2);
 }
-#contact-number {
-  color: rgb(1, 151, 21) !important;
+.contact-number {
+  color: rgb(1, 151, 21);
+  transition: 0.3s;
+}
+.contact-number:hover {
+  color: white;
+  background-color: #01490a;
+  border-radius: 0.5em;
+  padding: 0.2em 1em;
 }
 #footnote-right {
   display: block;
@@ -791,7 +798,10 @@ section {
   transition: 0.3s;
 }
 #footnote-right p a:hover {
- color:  rgb(0, 109, 14);
+ color:  white;
+ background-color: #01490a;
+ border-radius: 0.5em;
+  padding: 0.2em 1em;
 }
 #footnote-right-r {
   display: block;
@@ -818,7 +828,10 @@ section {
   transition: 0.3s;
 }
 #footnote-right-r p a:hover {
- color:  rgb(0, 109, 14);
+  color:  white;
+  background-color: #01490a;
+  border-radius: 0.5em;
+  padding: 0.2em 1em;
 }
 #footnote-right-d {
   display: block;
@@ -845,7 +858,10 @@ section {
   transition: 0.3s;
 }
 #footnote-right-d p a:hover {
- color:  rgb(0, 109, 14);
+  color:  white;
+  background-color: #01490a;
+  border-radius: 0.5em;
+  padding: 0.2em 1em;
 }
 
 .project-btn-styles {
