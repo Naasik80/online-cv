@@ -890,3 +890,317 @@ section {
   clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
 }
 
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700|Roboto:300,400,500,700');
+
+
+
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100000000;
+	.overlayDoor {
+		&:before, &:after {
+			content: "";
+			position: absolute;
+			width: 50%;
+			height: 100%;
+			background: #111;
+			transition: .5s cubic-bezier(.77,0,.18,1);
+			transition-delay: .8s;
+		}
+		&:before {
+			left: 0;
+		}
+		&:after {
+			right: 0;
+		}
+	}
+	&.loaded {
+		.overlayDoor {
+			&:before {
+				left: -50%;
+			}
+			&:after {
+				right: -50%;
+			}
+		}
+		.overlayContent {
+			opacity: 0;
+			margin-top: -15px;
+		}
+	}
+	.overlayContent {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		transition: .5s cubic-bezier(.77,0,.18,1);
+		.skip {
+			display: block;
+			width: 130px;
+			text-align: center;
+			margin: 20em auto 0;
+			cursor: pointer;
+			color: #fff;
+			font-family: 'Nunito';
+			font-weight: 700;
+			padding: 12px 0;
+			border: 2px solid #fff;
+			border-radius: 3px;
+			transition: 0.2s ease;
+			&:hover {
+				background: #ddd;
+				color: #444;
+				border-color: #ddd;
+			}
+		}
+	}
+}
+
+
+
+
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@keyframes spinInner {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(-720deg);
+	}
+}
+
+
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { 
+	from { opacity:0; } to { opacity:1; }
+	0% {
+		-webkit-transform: scale( 0 );-moz-transform: scale( 0 );-o-transform: scale( 0 );-ms-transform: scale( 0 );transform: scale( 0 );
+		  }
+		  
+	75% {
+	-webkit-transform: scale( 1 );-moz-transform: scale( 1 );-o-transform: scale( 1 );-ms-transform: scale( 1 );transform: scale( 1 );
+	}
+
+ }
+
+
+.fade-in {
+	opacity:0;  /* make things invisible upon start */
+	-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+	-webkit-animation-duration:2s;
+	-moz-animation-duration:2s;
+	animation-duration:2s;
+} 
+
+.fade-in.one {
+-webkit-animation-delay: 0.5s;
+-moz-animation-delay: 0.5s;
+animation-delay: 7.2s;
+}
+
+.fade-in.two {
+-webkit-animation-delay: 1s;
+-moz-animation-delay: 1s;
+animation-delay: 1s;
+}
+ 
+.fade-in.three {
+-webkit-animation-delay: 1.5s;
+-moz-animation-delay: 1.5s;
+animation-delay: 1.5s;
+}
+ 
+.fade-in.four {
+-webkit-animation-delay: 3s;
+-moz-animation-delay: 3s;
+animation-delay: 3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.circle {
+	animation:grow 5s;
+  
+  }
+  
+  @keyframes grow {
+   0% {
+  -webkit-transform: scale( 0 );-moz-transform: scale( 0 );-o-transform: scale( 0 );-ms-transform: scale( 0 );transform: scale( 0 );
+	}
+	
+	100% {
+	-webkit-transform: scale( 1 );-moz-transform: scale( 1 );-o-transform: scale( 1 );-ms-transform: scale( 1 );transform: scale( 1 );
+	}
+  }
+@keyframes motionsY{
+	0%{
+		transform: translateY(3em);
+	}
+	100%{
+		transform: rotateY(0em);
+	}
+}
+.frog{
+	
+	transition: 3s all;
+}
+.slide-content{
+	position: absolute;
+	text-align: center;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 2em;
+  font-weight: 400;
+  margin: 20px 0;
+}
+.slide1{
+	opacity: 0;
+	position: relative;
+	animation: mymove 1s;
+	animation-fill-mode: forwards;
+	animation-delay: 0.5s;
+}
+.slide2{
+	opacity: 0;
+	position: relative;
+	animation: mymove1 1s;
+	animation-delay: 0.9s;
+	animation-fill-mode: forwards;
+}
+.slide3{
+	opacity: 0;
+	position: relative;
+	animation: mymove 1s;
+	animation-delay: 1.2s;
+	animation-fill-mode: forwards;
+}
+@keyframes mymove {
+	0%   {
+		top: 2em;
+		opacity: 0;
+	}
+	100% {
+		top: 0em;
+		opacity: 1;
+	}
+  }
+  @keyframes mymove1 {
+	0%   {
+		top: 1em;
+		opacity: 0;
+	}
+	100% {
+		top: 0em;
+		opacity: 1;
+	}
+  }
+  .slide-content{
+	animation: byebye 0.4s;
+	animation-delay: 5s;
+	animation-fill-mode: forwards;
+	top: 4em;
+}
+  @keyframes byebye {
+	  0%{
+		  opacity: 1;
+	  }
+	  75%{
+		transform: translateY(0.5em);
+	  }
+	  100%{
+		  opacity: 0;
+	  }
+  }
+
+  .slide11{
+	opacity: 0;
+	position: relative;
+	animation: mymove 1s;
+	animation-fill-mode: forwards;
+	animation-delay: 5.5s;
+}
+.slide22{
+	opacity: 0;
+	position: relative;
+	animation: mymove1 1s;
+	animation-delay: 5.9s;
+	animation-fill-mode: forwards;
+}
+.slide33{
+	opacity: 0;
+	position: relative;
+	animation: mymove 1s;
+	animation-delay: 6.2s;
+	animation-fill-mode: forwards;
+	
+}
+.slide-content3{
+	position: absolute;
+	text-align: center;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 2em;
+  font-weight: 400;
+  margin: 20px 0;
+  top: 4em;
+}
+#tim {
+  animation-delay: 1s !important;
+  animation-fill-mode: forwards !important;
+}
+#tim.active {
+  animation: tim-speed 0.3s;
+}
+@keyframes tim-speed {
+  0%{
+    z-index: 1000;
+  }
+  100%{
+    z-index: -1000;
+  }
+}
