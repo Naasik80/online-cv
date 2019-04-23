@@ -885,7 +885,7 @@ section {
 .project-btn-styles a:hover {
   color: black !important;
   background-color: #cccccc;
-  text-shadow: 3px 4px 1px rgba(0, 0 , 0, 0.2);
+  text-shadow: 3px 1px 1px rgba(0, 0 , 0, 0.2);
   padding: 0.6em 2em 0.6em 2em;
   clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
 }
@@ -916,15 +916,23 @@ section {
 			position: absolute;
 			width: 50%;
 			height: 100%;
-			background: #111;
+			background: linear-gradient(rgba(4, 48, 0, 0.863),rgba(8, 90, 0, 0.89)),;
 			transition: .5s cubic-bezier(.77,0,.18,1);
 			transition-delay: .8s;
 		}
 		&:before {
-			left: 0;
-		}
+      left: 0;
+      background: linear-gradient(rgb(0, 0, 0),rgba(0, 0, 0, 0.8)), url(../images/green-abstract-wallpaper-13\ -\ Copy.jpg);
+      background-repeat: no-repeat; 
+      background-size: cover;
+      background-position: center;
+    }
 		&:after {
-			right: 0;
+      right: 0;
+      background: linear-gradient(rgb(0, 0, 0),rgba(0, 0, 0, 0.8)), url(../images/green-abstract-wallpaper-13.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
 		}
 	}
 	&.loaded {
