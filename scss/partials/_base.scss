@@ -909,30 +909,23 @@ section {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	z-index: 100000000;
+  z-index: 100000000;
+  font-size: 0.8em;
 	.overlayDoor {
 		&:before, &:after {
 			content: "";
 			position: absolute;
 			width: 50%;
-			height: 100%;
-			background: linear-gradient(rgba(4, 48, 0, 0.863),rgba(8, 90, 0, 0.89)),;
+      height: 100%;
+      background-color: #ffffff;
 			transition: .5s cubic-bezier(.77,0,.18,1);
 			transition-delay: .8s;
 		}
 		&:before {
       left: 0;
-      background: linear-gradient(rgb(0, 0, 0),rgba(0, 0, 0, 0.8)), url(../images/green-abstract-wallpaper-13\ -\ Copy.jpg);
-      background-repeat: no-repeat; 
-      background-size: cover;
-      background-position: center;
     }
 		&:after {
       right: 0;
-      background: linear-gradient(rgb(0, 0, 0),rgba(0, 0, 0, 0.8)), url(../images/green-abstract-wallpaper-13.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
 		}
 	}
 	&.loaded {
@@ -964,22 +957,24 @@ section {
 			text-align: center;
 			margin: 20em auto 0;
 			cursor: pointer;
-			color: #fff;
+			color: rgb(0, 0, 0);
 			font-family: 'Nunito';
 			font-weight: 700;
-			padding: 12px 0;
 			border: 2px solid #fff;
-			border-radius: 3px;
-			transition: 0.2s ease;
+			transition: 0.5s ease;
 			&:hover {
-				background: #ddd;
-				color: #444;
-				border-color: #ddd;
+				background: #519e24;
+				color: rgb(255, 255, 255);
+        border-color: #519e24;
+        padding: 12px 5em;
+        border-radius: 0.5em;
 			}
 		}
 	}
 }
-
+.col{
+  color: #519e24;
+}
 
 
 
@@ -1007,13 +1002,7 @@ section {
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @keyframes fadeIn { 
 	from { opacity:0; } to { opacity:1; }
-	0% {
-		-webkit-transform: scale( 0 );-moz-transform: scale( 0 );-o-transform: scale( 0 );-ms-transform: scale( 0 );transform: scale( 0 );
-		  }
-		  
-	75% {
-	-webkit-transform: scale( 1 );-moz-transform: scale( 1 );-o-transform: scale( 1 );-ms-transform: scale( 1 );transform: scale( 1 );
-	}
+
 
  }
 
@@ -1036,67 +1025,11 @@ section {
 .fade-in.one {
 -webkit-animation-delay: 0.5s;
 -moz-animation-delay: 0.5s;
-animation-delay: 7.2s;
-}
-
-.fade-in.two {
--webkit-animation-delay: 1s;
--moz-animation-delay: 1s;
-animation-delay: 1s;
-}
- 
-.fade-in.three {
--webkit-animation-delay: 1.5s;
--moz-animation-delay: 1.5s;
-animation-delay: 1.5s;
-}
- 
-.fade-in.four {
--webkit-animation-delay: 3s;
--moz-animation-delay: 3s;
-animation-delay: 3s;
+animation-delay: 9s;
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-.circle {
-	animation:grow 5s;
-  
-  }
-  
-  @keyframes grow {
-   0% {
-  -webkit-transform: scale( 0 );-moz-transform: scale( 0 );-o-transform: scale( 0 );-ms-transform: scale( 0 );transform: scale( 0 );
-	}
-	
-	100% {
-	-webkit-transform: scale( 1 );-moz-transform: scale( 1 );-o-transform: scale( 1 );-ms-transform: scale( 1 );transform: scale( 1 );
-	}
-  }
-@keyframes motionsY{
-	0%{
-		transform: translateY(3em);
-	}
-	100%{
-		transform: rotateY(0em);
-	}
-}
-.frog{
-	
-	transition: 3s all;
-}
 .slide-content{
 	position: absolute;
 	text-align: center;
@@ -1149,9 +1082,10 @@ animation-delay: 3s;
   }
   .slide-content{
 	animation: byebye 0.4s;
-	animation-delay: 5s;
+  animation-delay: 5s;
+  color: black;
 	animation-fill-mode: forwards;
-	top: 4em;
+	top: 5em;
 }
   @keyframes byebye {
 	  0%{
@@ -1190,12 +1124,12 @@ animation-delay: 3s;
 .slide-content3{
 	position: absolute;
 	text-align: center;
-  color: #fff;
+  color: rgb(0, 0, 0);
   font-family: "Raleway", sans-serif;
   font-size: 2em;
   font-weight: 400;
   margin: 20px 0;
-  top: 4em;
+  top: 5em;
 }
 #tim {
   animation-delay: 1s !important;
